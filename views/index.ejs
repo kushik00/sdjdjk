@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <header>
+        <div class="wrap-logo">
+        <a href="#logo" class="logo">Сайт</a>
+        </div>
+        <nav>
+          <a class="active" href="#home">Главная</a>
+          <a href="#contact">Контакты</a>
+          <a href="#about">О нас</a>
+        </nav>
+    </header>
+    <main>
+        <div id="books">
+            <% books.forEach((book) => { %>
+                <div class="book-card">
+                    <h3><%= book.title %> (<%= book.author %>)</h3>
+                    <p>Цена: ₽<%= book.price.toLocaleString() %></p>
+                    <p>Жанр: <%= book.genre %></p>
+                    <p>Описание: <%= book.description %></p>
+                    <h4>Особенности:</h4>
+                    <ul>
+                        <% book.features.forEach(feature => { %>
+                            <li><%= feature %></li>
+                        <% }) %>
+                    </ul>
+                </div>
+            <% }) %>
+        </div>
+    </main>
+    <script src="/index.js"></script>
+</body>
+</html>

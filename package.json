@@ -1,0 +1,16 @@
+{
+  "name": "xc",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "start": "script.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@splidejs/splide-extension-auto-scroll": "^0.5.3",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  }
+}

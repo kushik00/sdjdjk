@@ -9,14 +9,18 @@
 <body>
     <header>
         <div class="wrap-logo">
-        <a href="#logo" class="logo">Сайт</a>
+            <a href="#logo" class="logo">Сайт</a>
         </div>
-        <nav>
-          <a class="active" href="#home">Главная</a>
-          <a href="#contact">Контакты</a>
-          <a href="#about">О нас</a>
+        <nav id="navbar">
+            <a class="active" href="#home">Главная</a>
+            <a href="#contact">Контакты</a>
+            <a href="#about">О нас</a>
         </nav>
+        <div class="hamburger" id="hamburger">
+            <button>ujuhujh</button>
+        </div>
     </header>
+    
     <main>
         <div id="books">
             <% books.forEach((book) => { %>
@@ -35,6 +39,10 @@
             <% }) %>
         </div>
     </main>
-    <script src="/index.js"></script>
+
+    <footer>
+        <p>Компания © W3docs. Все права защищены.</p>
+      </footer>
+    <script src="/js/index.js"></script>
 </body>
 </html>
